@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motorap</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Motorap</h1>
+        <ul>
+          <li>
+            <a href="/index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="/service.html">Ver Proximo Service</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Ingresos</h2>
+    <p>Kilometros totales 16410</p>
+    <button>ver proximo service</button>
+    <button>agregar lugar a la agenda</button>
+    <!-- ver todo el tema con mapbox.. un bondi -->
+    <hr />
+
+    <form id="form">
+      <div>
+        <label for="viaje">Viaje: </label>
+        <input id="viaje" />
+      </div>
+      <div>
+        <label for="kms">Kilometros: </label>
+        <input id="kms" placeholder="0" type="number" />
+      </div>
+      <div>
+        <label for="precio">Valor: </label>
+        <input id="precio" placeholder="0" type="number" />
+      </div>
+      <div>
+        <label for="lluvia">Lluvia: </label>
+        <input type="checkbox" id="lluvia" />
+      </div>
+      <div>
+        <label for="espera">Espera: </label>
+        <input id="espera" type="float" default="0" placeholder="0" />
+        <span>hs</span>
+      </div>
+      <button>+ nuevo ingreso</button>
+    </form>
+
+    <ul>
+      <li>
+        <span>Destino: Cañuelas</span>
+        <span> - kms: 140</span>
+        <span> - espera: 1h</span>
+        <span> - $ 11000</span>
+      </li>
+      <li>
+        <span>Destino: Ceraldi</span>
+        <span> - kms: 14</span>
+        <span> - espera: 0h</span>
+        <span> - $ 980</span>
+      </li>
+      <li>
+        <span>Destino: Bbva</span>
+        <span> - kms: 6</span>
+        <span> - espera: 1h</span>
+        <span> - $ 1700</span>
+      </li>
+      <!-- ---- -->
+      <li>
+        <span>Total</span>
+        <span> - kms: 160</span>
+        <span> - valor final: $ 13.600</span>
+      </li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Destino/s</th>
+          <th>Kilometros</th>
+          <th>Espera</th>
+          <th>Lluvia</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Cañuelas</td>
+          <td>140</td>
+          <td>1h</td>
+          <td>no</td>
+          <td>11000</td>
+        </tr>
+        <tr>
+          <td>Ceraldi</td>
+          <td>14</td>
+          <td>0h</td>
+          <td>no</td>
+          <td>980</td>
+        </tr>
+        <tr>
+          <td>Bbva</td>
+          <td>6</td>
+          <td>1h</td>
+          <td>no</td>
+          <td>1700</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Kilometros</td>
+          <td>160</td>
+          <td>2h</td>
+          <td></td>
+          <td>13600</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <p>
+      Kilometros finales de moto: 16.570 ?
+      <input type="text" placeholder="kilometros finales" />
+    </p>
+    <button>Finalizar Jornada</button>
+
+    <!-- 
+
+      {
+        viajes: [
+          {
+            destino: "Cañuelas",
+            kms: 140,
+            espera: 1,
+            lluvia: false,
+            valor_espera: 1200,
+            valor_km: 70,
+            valor_lluvia: 20,
+            valor_final: 11000 
+          },
+          {
+            destino: "Ceraldi ",
+            kms: 14,
+            espera: 0,
+            lluvia: false,
+            valor_espera: 1200,
+            valor_km: 70,
+            valor_lluvia: 20,
+            valor_final: 980 
+          },
+          {
+            destino: "Bbva  ",
+            kms: 6,
+            espera: 1,
+            lluvia: false,
+            valor_espera: 1200,
+            valor_km: 70,
+            valor_lluvia: 20,
+            valor_final: 1700 
+          },
+          
+        ],
+        kms: 160
+        kms_finales:16570
+      }
+
+
+     -->
+  </body>
+</html>
